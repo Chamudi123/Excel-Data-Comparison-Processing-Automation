@@ -1,41 +1,60 @@
-# 🧾 Excel Data Comparison & Processing Automation
+# 🔍 Excel VBA Data Comparison and Processing Automation
 
-A VBA-powered Excel tool for automating comparison of two large datasets and transforming data for reporting.
-
----
-
-## 🔧 Problem Description
-Manually comparing large Excel files is time-consuming and error-prone. This tool was built to automate the process.
+This project automates the comparison and processing of PreAlert and ImportManifest data using Excel VBA. Built to streamline logistics data validation and minimize manual processing, the tool performs intelligent data transformation, fuzzy matching using Levenshtein distance, and highlights discrepancies with color-coded results.
 
 ---
 
-## ⚙️ How It Works
-- Load two datasets into the tool
-- Click "Compare" to identify mismatches and differences
-- Generate a report highlighting discrepancies
-- Automatically convert units (e.g., kg to lb) and parse names
+## 📌 Project Overview
+
+This tool was developed to automate and enhance the comparison of flight-related logistics data between two large datasets: **PreAlert** and **ImportManifest**. The macro-driven solution reduces manual workload and increases accuracy by automating:
+
+- Data preparation
+- Weight conversion
+- String matching (e.g., names, cities)
+- Currency extraction
+- Discrepancy detection and reporting
 
 ---
 
-## 🔁 VBA Automation Logic (Summary)
-- Uses dictionaries to compare rows
-- Highlights mismatched values in output
-- Parses names into first/last name
-- Converts weights between metric and imperial
+## 🧠 Key Features
+
+- **Levenshtein Distance Matching**: Uses fuzzy logic to detect similar but non-identical strings (e.g., customer names).
+- **Weight & Value Standardization**: Automatically converts weights to a standard unit (e.g., lbs to kgs) and extracts USD values.
+- **Structured Discrepancy Reporting**: Results are output in a color-coded format, highlighting mismatches across multiple fields.
+- **Step-by-Step Automation**:
+  - First, run `ProcessData` to prepare and clean datasets.
+  - Then, run `Comparison` to identify and output discrepancies.
 
 ---
 
-## 📈 Impact on Operations
-- Reduced comparison time from hours to minutes
-- Minimized human error in reporting
-- Improved accuracy in logistics audits
+## ⚙️ Requirements
+
+- Microsoft Excel (with macro support enabled)
+- PreAlert data file with expected column structure (see the sample data file)
+- ImportManifest file with expected column structure (see the sample data file)
 
 ---
 
-## 🖼️ Sample Output
-![Comparison Result](screenshots/comparison_output.png)
+## 🖥 Sample Workflow
+
+1. Paste PreAlert data into the **PreAlert** sheet.
+2. Paste ImportManifest data into the **ImportManifest** sheet.
+3. Run the `ProcessData` macro to clean and standardize.
+4. Run the `Comparison` macro to detect and output discrepancies.
+
+---
+
+## 💡 Skills Demonstrated
+
+- Excel VBA (Modular macros, loops, custom functions)
+- Data Transformation & Cleaning
+- String Matching Algorithms (Levenshtein Distance)
+- Report Automation
+- Debugging and Logic Building
 
 ---
 
 ## 👩‍💻 Author
-Chamudi | VBA Developer & Analyst
+
+**Chamudi**  
+Excel VBA | Data Automation | Logistics Data Processing  
